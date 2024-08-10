@@ -5,7 +5,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -89,4 +89,32 @@ hr {
     border-top: 1px solid #f2f2f2;
     margin-bottom: 5px;
     width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .image {
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .bar {
+        font-size: 20px;
+    }
+
+    .section {
+        padding-left: 20px;
+        padding-top: 5px;
+    }
 }
