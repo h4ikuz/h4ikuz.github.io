@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(24, 22, 22);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Profile image styling and animations */
+.image {
+    height: 320px;
+    width: 270px;
+    margin-top: 100px;
+    border-radius: 70px;
+    animation: 
+        fadeInAnimation 3s ease-out, 
+        slideLeft 1s ease-out 3s forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-80px); }
+}
+
+.name-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -50px;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.name {
+    font-size: 30px;
+    color: #f2f2f2;
+    opacity: 0;
+    animation: fadeInText 2s ease-out 4s forwards;
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bar {
+    margin-top: 30px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-out 4s forwards;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+    padding-right: 5px;
+    font-size: 30px;
+    animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.section {
+    padding-left: 50px;
+    padding-top: 10px;
+    color: #f2f2f2;
+    position: relative;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #f2f2f2;
+    margin-bottom: 5px;
+    width: 100%;
+}
